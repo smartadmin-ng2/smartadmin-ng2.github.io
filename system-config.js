@@ -2,9 +2,29 @@
  * User Configuration.
  **********************************************************************************************/
 /** Map relative paths to URLs. */
-var map = {};
+var map = {
+    '@ngrx': 'vendor/@ngrx',
+    'moment': 'vendor/moment/moment.js',
+    'ng2-bootstrap': 'vendor/ng2-bootstrap'
+};
 /** User packages configuration. */
-var packages = {};
+var packages = {
+    '@ngrx/core': {
+        main: 'index.js',
+        defaultExtension: 'js',
+        format: 'cjs'
+    },
+    '@ngrx/store': {
+        main: 'index.js',
+        defaultExtension: 'js',
+        format: 'cjs'
+    },
+    'ng2-bootstrap': {
+        main: 'ng2-bootstrap.js',
+        defaultExtension: 'js',
+        format: 'cjs'
+    }
+};
 ////////////////////////////////////////////////////////////////////////////////////////////////
 /***********************************************************************************************
  * Everything underneath this line is managed by the CLI.
@@ -25,6 +45,17 @@ var barrels = [
     'app/shared',
     'app/+dashboard',
     'app/+social',
+    'app/+outlook',
+    'app/+outlook/+list',
+    'app/+outlook/+details',
+    'app/shared/footer',
+    'app/shared/header',
+    'app/shared/header/recent-projects',
+    'app/shared/header/full-screen',
+    'app/shared/header/collapse-menu',
+    'app/shared/navigation',
+    'app/shared/demo-states',
+    'app/shared/ribbon',
 ];
 var cliSystemConfigPackages = {};
 barrels.forEach(function (barrelName) {
