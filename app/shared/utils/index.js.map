@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sourceRoot":"","sources":["index.ts"],"names":[],"mappings":"AAAA;;GAEG;;AAGH,4BAAyB,eACzB,CAAC;AADO,8CAAgC","sourcesContent":["/**\n * Created by griga on 6/20/16.\n */\n\n\nexport {MomentPipe} from './moment.pipe'\n"]}

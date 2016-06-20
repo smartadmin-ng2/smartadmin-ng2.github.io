@@ -5,7 +5,14 @@
 var map = {
     '@ngrx': 'vendor/@ngrx',
     'moment': 'vendor/moment/moment.js',
-    'ng2-bootstrap': 'vendor/ng2-bootstrap'
+    'jquery': 'vendor/jquery/dist/jquery.js',
+    'jquery-ui': 'vendor/jquery-ui/jquery-ui.js',
+    'ng2-bootstrap': 'vendor/ng2-bootstrap',
+    'symbol-observable': 'vendor/symbol-observable/lib/ponyfill.js',
+    'lodash': 'vendor/lodash',
+    'smart-widgets': 'vendor/smartadmin-plugins/smartwidgets/jarvis.widget.min.js',
+    'smart-notification': 'vendor/smartadmin-plugins/notification/SmartNotification.min.js',
+    'smart-chat': 'vendor/smartadmin-plugins/chat/chat.box.js',
 };
 /** User packages configuration. */
 var packages = {
@@ -23,7 +30,11 @@ var packages = {
         main: 'ng2-bootstrap.js',
         defaultExtension: 'js',
         format: 'cjs'
-    }
+    },
+    'lodash': {
+        main: 'index.js',
+        defaultExtension: 'js'
+    },
 };
 ////////////////////////////////////////////////////////////////////////////////////////////////
 /***********************************************************************************************
@@ -45,9 +56,6 @@ var barrels = [
     'app/shared',
     'app/+dashboard',
     'app/+social',
-    'app/+outlook',
-    'app/+outlook/+list',
-    'app/+outlook/+details',
     'app/shared/footer',
     'app/shared/header',
     'app/shared/header/recent-projects',
@@ -56,6 +64,18 @@ var barrels = [
     'app/shared/navigation',
     'app/shared/demo-states',
     'app/shared/ribbon',
+    'app/+smartadmin/+app-layouts',
+    'app/+smartadmin/prebuilt-skins',
+    'app/shared/i18n',
+    'app/shared/i18n/language-selector',
+    'app/shared/navigation/minify-menu',
+    'app/shared/header/activities',
+    'app/shared/api',
+    'app/shared/utils',
+    'app/shared/header/activities/activities-message',
+    'app/shared/header/activities/activities-notification',
+    'app/shared/header/activities/activities-task',
+    'app/shared/widgets/widgets-grid',
 ];
 var cliSystemConfigPackages = {};
 barrels.forEach(function (barrelName) {
