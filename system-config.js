@@ -65,6 +65,7 @@ var barrels = [
     'app/shared/demo-states',
     'app/shared/ribbon',
     'app/+smartadmin/+app-layouts',
+    'app/+smartadmin/+prebuilt-skins',
     'app/+smartadmin/prebuilt-skins',
     'app/shared/i18n',
     'app/shared/i18n/language-selector',
