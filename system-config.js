@@ -3,13 +3,14 @@
  **********************************************************************************************/
 /** Map relative paths to URLs. */
 var map = {
+    'rxjs/Rx': 'vendor/rxjs/bundles/Rx.umd.js',
     '@ngrx': 'vendor/@ngrx',
     'moment': 'vendor/moment/moment.js',
     'jquery': 'vendor/jquery/dist/jquery.js',
     'jquery-ui': 'vendor/jquery-ui/jquery-ui.js',
     'ng2-bootstrap': 'vendor/ng2-bootstrap',
     'symbol-observable': 'vendor/symbol-observable/lib/ponyfill.js',
-    'lodash': 'vendor/lodash',
+    // 'lodash': 'vendor/lodash',
     'smart-widgets': 'vendor/smartadmin-plugins/smartwidgets/jarvis.widget.min.js',
     'smart-notification': 'vendor/smartadmin-plugins/notification/SmartNotification.min.js',
     'smart-chat': 'vendor/smartadmin-plugins/chat/chat.box.js',
@@ -27,15 +28,57 @@ var packages = {
         format: 'cjs'
     },
     'ng2-bootstrap': {
-        main: 'ng2-bootstrap.js',
+        main: 'bundles/ng2-bootstrap.js',
         defaultExtension: 'js',
         format: 'cjs'
     },
-    'lodash': {
-        main: 'index.js',
-        defaultExtension: 'js'
+    '@angular/core': {
+        main: 'bundles/core.umd.js',
+        defaultExtension: 'js',
+        format: 'cjs'
+    },
+    '@angular/platform-browser': {
+        main: 'bundles/platform-browser.umd.js',
+        defaultExtension: 'js',
+        format: 'cjs'
+    },
+    '@angular/platform-browser-dynamic': {
+        main: 'bundles/platform-browser-dynamic.umd.js',
+        defaultExtension: 'js',
+        format: 'cjs'
+    },
+    '@angular/http': {
+        main: 'bundles/http.umd.js',
+        defaultExtension: 'js',
+        format: 'cjs'
+    },
+    '@angular/common': {
+        main: 'bundles/common.umd.js',
+        defaultExtension: 'js',
+        format: 'cjs'
+    },
+    '@angular/compiler': {
+        main: 'bundles/compiler.umd.js',
+        defaultExtension: 'js',
+        format: 'cjs'
     },
 };
+// var packageNames = [
+//   '@angular/common',
+//   '@angular/compiler',
+//   '@angular/core', // <--------
+//   '@angular/http',
+//   '@angular/platform-browser',
+//   '@angular/platform-browser-dynamic',
+//   '@angular/router',
+//   '@angular/router-deprecated',
+//   '@angular/testing',
+//   '@angular/upgrade',
+// ];
+//
+// packageNames.forEach(function(pkgName) {
+//   packages[pkgName] = { main: 'index.js', defaultExtension: 'js' };
+// });
 ////////////////////////////////////////////////////////////////////////////////////////////////
 /***********************************************************************************************
  * Everything underneath this line is managed by the CLI.

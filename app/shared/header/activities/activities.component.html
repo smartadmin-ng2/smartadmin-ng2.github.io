@@ -21,9 +21,9 @@
    <div class="ajax-notifications custom-scroll">
       <ul class="notification-body" *ngIf="currentActivity" >
         <li *ngFor="let item of currentActivity.data" [ngSwitch]="item.type">
-          <sa-activities-message *ngSwitchWhen="'message'" [item]="item"></sa-activities-message>
-          <sa-activities-notification *ngSwitchWhen="'notification'" [item]="item"></sa-activities-notification>
-          <sa-activities-task *ngSwitchWhen="'task'" [item]="item"></sa-activities-task>
+          <sa-activities-message *ngSwitchCase="'message'" [item]="item"></sa-activities-message>
+          <sa-activities-notification *ngSwitchCase="'notification'" [item]="item"></sa-activities-notification>
+          <sa-activities-task *ngSwitchCase="'task'" [item]="item"></sa-activities-task>
         </li>
 
       </ul>
