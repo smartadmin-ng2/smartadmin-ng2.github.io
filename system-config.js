@@ -7,7 +7,9 @@ var map = {
     '@ngrx': 'vendor/@ngrx',
     'moment': 'vendor/moment/moment.js',
     'jquery': 'vendor/jquery/dist/jquery.js',
-    'jquery-ui': 'vendor/jquery-ui/jquery-ui.js',
+    'jquery-migrate': 'vendor/jquery-migrate/dist/jquery-migrate.js',
+    // 'jquery-ui': 'vendor/jquery-ui/dist/jquery-ui.js',
+    'jquery-ui': 'https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js',
     'ng2-bootstrap': 'vendor/ng2-bootstrap',
     'symbol-observable': 'vendor/symbol-observable/lib/ponyfill.js',
     // 'lodash': 'vendor/lodash',
@@ -119,7 +121,10 @@ var barrels = [
     'app/shared/header/activities/activities-message',
     'app/shared/header/activities/activities-notification',
     'app/shared/header/activities/activities-task',
+    'app/shared/widgets',
+    'app/shared/widgets/widget',
     'app/shared/widgets/widgets-grid',
+    'app/+widgets-showcase',
 ];
 var cliSystemConfigPackages = {};
 barrels.forEach(function (barrelName) {
