@@ -8,14 +8,15 @@ var map = {
     'moment': 'vendor/moment/moment.js',
     'jquery': 'vendor/jquery/dist/jquery.js',
     'jquery-migrate': 'vendor/jquery-migrate/dist/jquery-migrate.js',
-    // 'jquery-ui': 'vendor/jquery-ui/dist/jquery-ui.js',
-    'jquery-ui': 'https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js',
+    'jquery-ui': 'vendor/jquery-ui-npm/jquery-ui.js',
     'ng2-bootstrap': 'vendor/ng2-bootstrap',
     'symbol-observable': 'vendor/symbol-observable/lib/ponyfill.js',
     // 'lodash': 'vendor/lodash',
     'smart-widgets': 'vendor/smartadmin-plugins/smartwidgets/jarvis.widget.min.js',
     'smart-notification': 'vendor/smartadmin-plugins/notification/SmartNotification.min.js',
     'smart-chat': 'vendor/smartadmin-plugins/chat/chat.box.js',
+    'select2': 'vendor/select2/dist/js/select2.min.js',
+    'summernote': 'vendor/summernote/dist/summernote.min.js',
 };
 /** User packages configuration. */
 var packages = {
@@ -125,6 +126,13 @@ var barrels = [
     'app/shared/widgets/widget',
     'app/shared/widgets/widgets-grid',
     'app/+widgets-showcase',
+    'app/+outlook',
+    'app/+outlook/shared',
+    'app/+outlook/folder',
+    'app/+outlook/details',
+    'app/+outlook/replay',
+    'app/+outlook/compose',
+    'app/shared/forms',
 ];
 var cliSystemConfigPackages = {};
 barrels.forEach(function (barrelName) {

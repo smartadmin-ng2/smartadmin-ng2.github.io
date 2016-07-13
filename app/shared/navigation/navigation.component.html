@@ -10,15 +10,15 @@
     traditional href="" links. See documentation for details.
     -->
 
-    <ul>
+    <ul saMenu>
       <li saMenuCollapse>
         <a title="Dashboard"><i class="fa fa-lg fa-fw fa-home"></i> <span
           class="menu-item-parent">{{'Dashboard' | i18n}}</span></a>
         <ul>
-          <li data-ui-sref-active="active">
+          <li>
             <a [routerLink]="['/dashboard']">{{'Analytics Dashboard' | i18n}}</a>
           </li>
-          <li data-ui-sref-active="active">
+          <li>
             <a [routerLink]="['/social']">{{'Social Wall' | i18n}}</a>
           </li>
         </ul>
@@ -27,24 +27,21 @@
       <li saMenuCollapse class="top-menu-invisible">
         <a href="#"><i class="fa fa-lg fa-fw fa-cube txt-color-blue"></i> <span class="menu-item-parent">{{'SmartAdmin Intel' | i18n}}</span></a>
         <ul>
-          <li data-ui-sref-active="active">
+          <li>
             <a [routerLink]="['/smartadmin/app-layouts']"><i class="fa fa-gear"></i>
               {{'App Layouts' | i18n}}</a>
           </li>
-          <li data-ui-sref-active="active">
+          <li>
             <a [routerLink]="['/smartadmin/prebuilt-skins']"><i class="fa fa-picture-o"></i>
               {{'Prebuilt Skins' | i18n}}</a>
           </li>
-          <!--<li data-ui-sref-active="active">
-              <a data-ui-sref="app.smartAdmin.appLayout"><i class="fa fa-cube"></i> {{'App Settings' | i18n}}</a>
-          </li>-->
         </ul>
       </li>
 
-      <li data-ui-sref-active="active">
-        <a data-ui-sref="app.inbox.folder" title="Outlook">
+      <li>
+        <a [routerLink]="['/outlook']"  title="Outlook">
           <i class="fa fa-lg fa-fw fa-inbox"></i> <span class="menu-item-parent">{{'Outlook' | i18n}}</span><span
-          unread-messages-count class="badge pull-right inbox-badge"></span></a>
+         class="badge pull-right">14</span></a>
       </li>
 
       <li saMenuCollapse>

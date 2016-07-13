@@ -7,18 +7,12 @@
   <div class="row">
     <div class="col-sm-12">
 
-      <div class="alert alert-info fade in">
-        <button class="close" data-dismiss="alert">
-          ×
-        </button>
+      <alert type="info" dismissible="true">
         <i class="fa-fw fa fa-info"></i>
         <strong>Heads up!</strong> If the widgets are not reacting to your drag and drop events on chrome, try to turn off chrome touch events by going to, <a href="chrome://flags/#touch-events">chrome://flags/#touch-events</a> if you do not have a touch screen.
-      </div>
+      </alert>
 
       <div class="well">
-        <button class="close" data-dismiss="alert">
-          &#xD7;
-        </button>
         <h1><span class="semi-bold">Smart</span> <i class="ultra-light">Widgets</i> (aka JarvisWidgets) <sup class="badge bg-color-red bounceIn animated">v 2.0</sup> <br>
           <small class="text-danger slideInRight fast animated"><strong>Exclusive to SmartAdmin!</strong></small></h1>
         <p>The all new and revolutionary JarvisWidgets v2.0 (<strong>$35 value</strong>) is now only exclusive to SmartAdmin.
@@ -73,6 +67,7 @@
         <!-- end widget -->
 
 
+        <!-- title change widget-->
         <sa-widget [colorbutton]="false"
                    [togglebutton]="false"
                    [deletebutton]="false"
@@ -104,13 +99,8 @@
           <!-- end widget div -->
         </sa-widget>
 
-      </article>
-
-      <!--widgets column-->
-      <article class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-
         <!-- full screen demo-->
-        <sa-widget [colorbutton]="false" [editbutton]="false" [togglebutton]="false" [deletebutton]="false" [color]="greenLight">
+        <sa-widget [colorbutton]="false" [editbutton]="false" [togglebutton]="false" [deletebutton]="false" [color]="'greenLight'">
           <!-- widget options:
               usage: <div data-jarvis-widget id="wid-id-0" data-widget-editbutton="false">
               data-widget-colorbutton="false"
@@ -138,6 +128,118 @@
           </div>
           <!-- end widget div -->
         </sa-widget>
+
+
+        <sa-widget [colorbutton]="false" [togglebutton]="false" [editbutton]="false" [fullscreenbutton]="false" [color]="'red'">
+          <header>
+            <h2><strong>Delete</strong> <i>Widget </i></h2>
+          </header>
+          <!-- widget div-->
+          <div>
+            <!-- widget content -->
+            <div class="widget-body">
+              <h6 class="alert alert-warning semi-bold">
+                <i class="fa fa-times"></i> By deleting a widget you will <strong>remove</strong> the widget from the page and will need to connect the backend with the onevent handler to delete it from database.
+              </h6>
+              <code>
+                &lt;sa-widget [deletebutton]="true"&gt;&lt;/sa-widget&gt;
+              </code>
+            </div>
+            <!-- end widget content -->
+          </div>
+          <!-- end widget div -->
+        </sa-widget>
+
+        <!-- colorize button demo-->
+        <sa-widget [togglebutton]="false" [editbutton]="false" [deletebutton]="false" [fullscreenbutton]="false">
+          <header>
+            <h2><strong>Widget</strong> <i>Colors</i></h2>
+          </header>
+          <!-- widget div-->
+          <div>
+            <!-- widget content -->
+            <div class="widget-body">
+              <div class="row">
+                <div class="col-md-6 col-lg-8">
+                  <h5><strong>Change</strong> and <i>save</i> widget <u>color</u></h5>
+                  <code>data-widget-colorbutton</code>
+                  <br>
+                  <br>
+                  <p>Change widget color at will and SmartAdmin will permanently remember the color of your chosen widget.
+                    Do this to any widget in any page and SmartAdmin will keep track of all your widgets!</p>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <img src="img/demo/widget-colorpicker.png" alt="widget colorpicker" class="pull-right hover-transparent img-responsive">
+                </div>
+              </div>
+            </div>
+            <!-- end widget content -->
+          </div>
+          <!-- end widget div -->
+        </sa-widget>
+
+
+
+        <!-- DEMONSTRATION OF -->
+
+        <sa-widget [colorbutton]="false" [editbutton]="false" [togglebutton]="false" [deletebutton]="false"
+                   [fullscreenbutton]="false" [custombutton]="false" [color]="'pink'">
+
+          <header>
+            <span class="widget-icon"> <i class="fa fa-comments"></i> </span>
+            <h2><strong>Label &amp; Badges</strong> </h2>
+            <div class="widget-toolbar">
+              <div class="label label-success">
+                <i class="fa fa-arrow-up"></i> 2.35%
+              </div>
+            </div>
+            <div class="widget-toolbar">
+              <div class="badge bg-color-blue">
+                99
+              </div>
+            </div>
+          </header>
+          <!-- widget div-->
+          <div>
+            <!-- widget content -->
+            <div class="widget-body">
+              <!-- widget toolbar -->
+              <div class="widget-body-toolbar text-center">
+                <div class="badge bg-color-purple">
+                  small badge
+                </div>
+                <div class="label label-warning">
+                  <i class="fa fa-check"></i> I am a big label
+                </div>
+              </div>
+              <!-- end widget toolbar -->
+              <!-- widget body text-->
+              <p class="alert alert-info">
+                Add label inside widget footer / toolbar
+              </p>
+              <!-- end widget body text-->
+              <!-- widget footer -->
+              <div class="widget-footer">
+                <div class="badge bg-color-greenLight pull-left">
+                  13
+                </div>
+                <div class="label label-danger">
+                  <i class="fa fa-arrow-down"></i> -1.75%
+                </div>
+              </div>
+              <!-- end widget footer -->
+            </div>
+            <!-- end widget content -->
+          </div>
+          <!-- end widget div -->
+        </sa-widget>
+
+
+      </article>
+
+      <!--widgets column-->
+      <article class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+
       </article>
 
     </div>
