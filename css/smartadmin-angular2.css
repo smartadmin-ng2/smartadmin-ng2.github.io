@@ -36,7 +36,7 @@ smartadmin-app {
   flex: 1;
 }
 
-sa-outlook {
+sa-outlook, sa-maps {
 
   display: flex;
   flex-direction: column;
@@ -48,5 +48,24 @@ sa-outlook {
 }
 
 
+.fx-fill{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+sa-widgets-grid>#widgets-grid{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+}
+
+sa-widget.fx-fill>.jarviswidget{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+}
 
 a[href=""]:hover{cursor: pointer;}

@@ -117,6 +117,7 @@ var barrels = [
     'app/shared/i18n/language-selector',
     'app/shared/navigation/minify-menu',
     'app/shared/header/activities',
+    'app/shared/forms',
     'app/shared/api',
     'app/shared/utils',
     'app/shared/header/activities/activities-message',
@@ -132,7 +133,8 @@ var barrels = [
     'app/+outlook/details',
     'app/+outlook/replay',
     'app/+outlook/compose',
-    'app/shared/forms',
+    'app/+maps',
+    'app/+maps/shared',
 ];
 var cliSystemConfigPackages = {};
 barrels.forEach(function (barrelName) {
