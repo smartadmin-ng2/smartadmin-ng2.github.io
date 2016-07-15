@@ -15,6 +15,7 @@ var map = {
     'smart-widgets': 'vendor/smartadmin-plugins/smartwidgets/jarvis.widget.min.js',
     'smart-notification': 'vendor/smartadmin-plugins/notification/SmartNotification.min.js',
     'smart-chat': 'vendor/smartadmin-plugins/chat/chat.box.js',
+    'jquery.sparkline': 'vendor/smartadmin-plugins/bower_components/relayfoods-jquery.sparkline/dist/jquery.sparkline.min.js',
     'select2': 'vendor/select2/dist/js/select2.min.js',
     'summernote': 'vendor/summernote/dist/summernote.min.js',
 };
@@ -123,6 +124,8 @@ var barrels = [
     'app/shared/header/activities/activities-message',
     'app/shared/header/activities/activities-notification',
     'app/shared/header/activities/activities-task',
+    'app/shared/graphs',
+    'app/shared/graphs/inline',
     'app/shared/widgets',
     'app/shared/widgets/widget',
     'app/shared/widgets/widgets-grid',
@@ -135,6 +138,9 @@ var barrels = [
     'app/+outlook/compose',
     'app/+maps',
     'app/+maps/shared',
+    'app/shared/navigation/big-breadcrumbs',
+    'app/shared/stats',
+    'app/+graphs/sparklines',
 ];
 var cliSystemConfigPackages = {};
 barrels.forEach(function (barrelName) {

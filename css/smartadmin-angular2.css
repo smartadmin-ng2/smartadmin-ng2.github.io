@@ -69,3 +69,10 @@ sa-widget.fx-fill>.jarviswidget{
 }
 
 a[href=""]:hover{cursor: pointer;}
+
+
+.jqstooltip {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}

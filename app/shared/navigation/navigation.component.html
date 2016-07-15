@@ -49,13 +49,13 @@
           class="menu-item-parent">{{'Graphs' | i18n}}</span></a>
         <ul>
           <li data-ui-sref-active="active">
-            <a data-ui-sref="app.graphs.flot">{{'Flot Chart' | i18n}}</a>
+            <a [routerLink]="['graphs']">{{'Flot Chart' | i18n}}</a>
           </li>
           <li data-ui-sref-active="active">
             <a data-ui-sref="app.graphs.morris">{{'Morris Charts' | i18n}}</a>
           </li>
           <li data-ui-sref-active="active">
-            <a data-ui-sref="app.graphs.sparkline">{{'Sparkline' | i18n}}</a>
+            <a [routerLink]="['graphs/sparklines']">{{'Sparkline' | i18n}}</a>
           </li>
           <li data-ui-sref-active="active">
             <a data-ui-sref="app.graphs.easyPieCharts">{{'Easy Pie Charts' | i18n}}</a>

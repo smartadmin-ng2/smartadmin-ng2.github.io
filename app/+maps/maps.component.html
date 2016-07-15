@@ -1,15 +1,15 @@
 <div id="content">
   <div class="row">
-    <sa-big-breadcrumbs items="['Google Map', 'Custom Skins']" icon="map-marker"
+    <sa-big-breadcrumbs [items]="['Google Map', 'Custom Skins']" icon="map-marker"
                         class="col-xs-12 col-sm-7 col-md-7 col-lg-4"></sa-big-breadcrumbs>
-    <sa-stats class="hidden-xs"></sa-stats>
+    <sa-stats class="hidden-3xs"></sa-stats>
   </div>
 
 
   <div class="row">
     <div class="col-xs-12">
       <button class="btn btn-default" [ngClass]="{active: activeStyle == style}" (click)="setStyle(style)"
-              *ngFor="let style  of  styles">{{style.name}}
+              *ngFor="let style of styles">{{style.name}}
       </button>
     </div>
     <hr>
