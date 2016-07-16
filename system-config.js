@@ -18,6 +18,7 @@ var map = {
     'jquery.sparkline': 'vendor/smartadmin-plugins/bower_components/relayfoods-jquery.sparkline/dist/jquery.sparkline.min.js',
     'select2': 'vendor/select2/dist/js/select2.min.js',
     'summernote': 'vendor/summernote/dist/summernote.min.js',
+    'jquery.easy-pie-chart': 'vendor/smartadmin-plugins/bower_components/jquery.easy-pie-chart/dist/jquery.easypiechart.min.js',
 };
 /** User packages configuration. */
 var packages = {
@@ -141,6 +142,7 @@ var barrels = [
     'app/shared/navigation/big-breadcrumbs',
     'app/shared/stats',
     'app/+graphs/sparklines',
+    'app/+graphs/easy-pie-charts',
 ];
 var cliSystemConfigPackages = {};
 barrels.forEach(function (barrelName) {
