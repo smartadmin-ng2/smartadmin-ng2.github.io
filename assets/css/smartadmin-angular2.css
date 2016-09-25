@@ -11,7 +11,7 @@ body {
   flex-direction: column;
 }
 
-app-root, app-main-layout{
+app-root, app-main-layout, app-auth-layout, app-locked, #extr-page{
 
   display: flex;
   flex-direction: column;
