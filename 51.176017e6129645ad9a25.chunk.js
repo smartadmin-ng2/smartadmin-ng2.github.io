@@ -1,4 +1,4 @@
-webpackJsonp([51,52],{1500:function(t,e){/*! X-editable - v1.5.1 
+webpackJsonp([51,52],{1502:function(t,e){/*! X-editable - v1.5.1 
 * In-place editing with Twitter Bootstrap, jQuery UI or pure jQuery
 * http://github.com/vitalets/x-editable
 * Copyright (c) 2013 Vitaliy Potapov; Licensed MIT */

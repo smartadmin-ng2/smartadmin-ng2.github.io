@@ -1,4 +1,4 @@
-webpackJsonp([50,52],{1501:function(t,e,o){/*!
+webpackJsonp([50,52],{1503:function(t,e,o){/*!
  * Bootstrap Colorpicker v2.3.3
  * http://mjolnic.github.io/bootstrap-colorpicker/
  *
