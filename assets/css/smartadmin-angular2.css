@@ -109,11 +109,11 @@ a:hover{cursor: pointer;}
 
 
 .ng-valid[required] {
-  border-left: 5px solid #42A948; /* green */
+  /*border-left: 5px solid #42A948; !* green *!*/
 }
 
 .ng-invalid {
-  border-left: 5px solid #a94442; /* red */
+  /*border-left: 5px solid #a94442; !* red *!*/
 }
 
 
@@ -273,4 +273,9 @@ svg {
   vertical-align: middle;
   line-height: 20px;
   padding-left: 3px;
+}
+
+
+#calendar .fc-right, #calendar .fc-center{
+  display: none;
 }
