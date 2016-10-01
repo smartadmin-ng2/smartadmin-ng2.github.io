@@ -253,3 +253,8 @@ svg {
 #calendar .fc-right, #calendar .fc-center{
   display: none;
 }
+
+
+.widget-toolbar .btn-group.dropdown{
+  margin-top: 0;
+}
