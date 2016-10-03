@@ -253,3 +253,10 @@ svg {
 #calendar .fc-right, #calendar .fc-center{
   display: none;
 }
+
+
+
+
+#sparks li h5 {
+  margin-top: -1px;
+}
