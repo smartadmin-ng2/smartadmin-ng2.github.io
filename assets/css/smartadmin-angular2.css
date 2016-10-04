@@ -260,3 +260,7 @@ svg {
 #sparks li h5 {
   margin-top: -1px;
 }
+
+.select2-container-multi .select2-choices, .select2-selection--multiple{
+  border-color: transparent;
+}
