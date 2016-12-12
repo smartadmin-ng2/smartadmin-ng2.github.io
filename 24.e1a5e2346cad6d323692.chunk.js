@@ -1,4 +1,4 @@
-webpackJsonp([24,31],{1575:function(e,t,a){/*! @license Copyright 2014 Dan Vanderkam (danvdk@gmail.com) MIT-licensed (http://opensource.org/licenses/MIT) */
+webpackJsonp([24,32],{1582:function(e,t,a){/*! @license Copyright 2014 Dan Vanderkam (danvdk@gmail.com) MIT-licensed (http://opensource.org/licenses/MIT) */
 !function(e){"use strict";for(var t,a,i={},n=function(){},s="memory".split(","),r="assert,clear,count,debug,dir,dirxml,error,exception,group,groupCollapsed,groupEnd,info,log,markTimeline,profile,profiles,profileEnd,show,table,time,timeEnd,timeline,timelineEnd,timeStamp,trace,warn".split(",");t=s.pop();)e[t]=e[t]||i;for(;a=r.pop();)e[a]=e[a]||n}(this.console=this.console||{}),/**
  * @license
  * Copyright 2012 Dan Vanderkam (danvdk@gmail.com)
@@ -107,3 +107,4 @@ function(){"use strict";r.DataHandlers.ErrorBarsHandler=function(){};var e=r.Dat
  * MIT-licensed (http://opensource.org/licenses/MIT)
  */
 function(){"use strict";r.DataHandlers.FractionsBarsHandler=function(){};var e=r.DataHandlers.FractionsBarsHandler;e.prototype=new r.DataHandlers.BarsHandler,e.prototype.extractSeries=function(e,t,a){for(var i,n,s,r,o,l,h,d,c=[],p=100,u=a.get("sigma"),g=a.get("logscale"),f=0;f<e.length;f++)i=e[f][0],s=e[f][t],g&&null!==s&&(s[0]<=0||s[1]<=0)&&(s=null),null!==s?(r=s[0],o=s[1],null===r||isNaN(r)?c.push([i,r,[r,r,r,o]]):(l=o?r/o:0,h=o?u*Math.sqrt(l*(1-l)/o):1,d=p*h,n=p*l,c.push([i,n,[n-d,n+d,r,o]]))):c.push([i,null,[null,null,null,null]]);return c},e.prototype.rollingAverage=function(e,t,a){t=Math.min(t,e.length);var i,n,s,r,o=[],l=a.get("sigma"),h=a.get("wilsonInterval"),d=0,c=0,p=100;for(s=0;s<e.length;s++){d+=e[s][2][2],c+=e[s][2][3],s-t>=0&&(d-=e[s-t][2][2],c-=e[s-t][2][3]);var u=e[s][0],g=c?d/c:0;if(h)if(c){var f=g<0?0:g,y=c,v=l*Math.sqrt(f*(1-f)/y+l*l/(4*y*y)),_=1+l*l/c;i=(f+l*l/(2*c)-v)/_,n=(f+l*l/(2*c)+v)/_,o[s]=[u,f*p,[i*p,n*p]]}else o[s]=[u,0,[0,0]];else r=c?l*Math.sqrt(g*(1-g)/c):1,o[s]=[u,p*g,[p*(g-r),p*(g+r)]]}return o}}()}});
+//# sourceMappingURL=24.e1a5e2346cad6d323692.bundle.map
